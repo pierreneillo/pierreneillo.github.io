@@ -93,7 +93,7 @@ function main() {
     let timer = null;
     while (grid == null || palette == null) {
       await sleep(100);
-      grid = document.querySelector("section>div:first-child>div:first-child");
+      grid = [...document.querySelectorAll("*")].filter(item => item.childElementCount==10000)[0];
       palette = document.querySelector(".colorpallete");
       timer = this.document.getElementById("timer");
     }
