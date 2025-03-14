@@ -845,6 +845,7 @@ function main() {
         -1, -1, -1, -1, -1, -1, -1, -1,
       ],
     ];
+    console.log("Updated version");
     while (true) {
       match(0, 0, map, grid, palette, paletteCorrespondance);
       // Gestion intelligente de l'attente
